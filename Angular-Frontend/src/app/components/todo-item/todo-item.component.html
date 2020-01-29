@@ -1,0 +1,25 @@
+<div class="row" [ngClass]="setClasses()" style="text-align: left;margin-bottom: 1%;
+                            border-radius: 5px;" >
+    
+    
+    <div style="width: 20px;height: 100%;display: inline;">
+        <input (change)="onToggle(todo)" type="checkbox"/>
+    </div>
+    
+    
+    
+    <div style="display: inline;">
+        <p style="display: inline;margin-left: 10px;margin-right: 10px; font-size: 1.5em;">
+                {{ todo.title }}
+        </p>
+    </div>
+    
+    
+    
+    <div style="display: inline;float: right;width: 25px;align-items: stretch;" >
+        <button (click)="onDelete(todo)" class="del">x</button>
+    </div>
+
+
+
+</div>
